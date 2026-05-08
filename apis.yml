@@ -3,21 +3,39 @@ url: https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/a
 name: Flexport
 x-type: company
 description: >-
-  Flexport is a global freight forwarding and supply chain platform combining ocean, air, trucking, and customs brokerage with real-time visibility APIs.
+  Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Logistics
   - Freight
   - Supply Chain
   - Customs
-  - API
+  - B2B
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: flexport:flexport-rest-api
+    name: Flexport REST API
+    description: >-
+      Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://apidocs.flexport.com/
+    baseURL: https://api.flexport.com
+    tags:
+      - Logistics
+      - Freight
+      - REST
+    properties:
+      - type: Documentation
+        url: https://apidocs.flexport.com/
+      - type: Developers
+        url: https://www.flexport.com/api/
 common:
   - type: Website
     url: https://www.flexport.com/
+  - type: Documentation
+    url: https://apidocs.flexport.com/
   - type: Plans
     url: plans/flexport-plans-pricing.yml
   - type: RateLimits
