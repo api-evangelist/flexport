@@ -1,0 +1,29 @@
+aid: flexport
+url: https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml
+name: Flexport
+x-type: company
+description: >-
+  Flexport is a global freight forwarding and supply chain platform combining ocean, air, trucking, and customs brokerage with real-time visibility APIs.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Logistics
+  - Freight
+  - Supply Chain
+  - Customs
+  - API
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.flexport.com/
+  - type: Plans
+    url: plans/flexport-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/flexport-rate-limits.yml
+  - type: FinOps
+    url: finops/flexport-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
