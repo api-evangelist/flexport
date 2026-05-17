@@ -1,7 +1,7 @@
 aid: flexport
 url: https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml
 name: Flexport
-x-type: company
+kind: company
 description: >-
   Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
