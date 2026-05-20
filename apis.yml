@@ -32,6 +32,10 @@ apis:
       - type: Developers
         url: https://www.flexport.com/api/
 common:
+  - type: GitHubOrganization
+    url: https://github.com/flexport
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/flexport
   - type: Website
     url: https://www.flexport.com/
   - type: Documentation
