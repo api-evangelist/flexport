@@ -2,36 +2,54 @@
 
 Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=flexport-api-evangelist&utm_content=repo)
+## Tags
 
-## Type
-- **x-type:** company
-
-## Tags:
- - Logistics, Freight, Supply Chain, Customs, B2B
+- Logistics
+- Freight
+- Supply Chain
+- Customs
+- B2B
 
 ## Timestamps
+
 - **Created:** 2026-05-08
 - **Modified:** 2026-05-08
 
 ## APIs
 
 ### Flexport REST API
+
 Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
 
-- **Human URL:** https://apidocs.flexport.com/
-- **Base URL:** https://api.flexport.com
+- **Human URL:** [https://apidocs.flexport.com/](https://apidocs.flexport.com/)
+- **Base URL:** `https://api.flexport.com`
+
+#### Tags
+
+- Logistics
+- Freight
+- REST
+
+#### Properties
+
+- [Documentation](https://apidocs.flexport.com/)
+- [Developers](https://www.flexport.com/api/)
+- [Postman Collection](collections/flexport.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/flexport.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
+
+- [GitHub Organization](https://github.com/flexport)
+- [LinkedIn](https://www.linkedin.com/company/flexport)
 - [Website](https://www.flexport.com/)
 - [Documentation](https://apidocs.flexport.com/)
-- [Plans](plans/flexport-plans-pricing.yml) — placeholder, pipeline reconciles later
-- [RateLimits](rate-limits/flexport-rate-limits.yml) — placeholder
-- [FinOps](finops/flexport-finops.yml) — FOCUS-aligned placeholder
+- [Plans](plans/flexport-plans-pricing.yml)
+- [Rate Limits](rate-limits/flexport-rate-limits.yml)
+- [Fin Ops](finops/flexport-finops.yml)
 
 ## Maintainers
-**FN:** Kin Lane
 
+**FN:** Kin Lane
 **Email:** kin@apievangelist.com
