@@ -1,0 +1,500 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Flexport REST API",
+    "version": "2023-07-01"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "client_credentials",
+      "accessTokenUrl": "https://api.flexport.com/oauth/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Shipments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List shipments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/shipments",
+            "params": [
+              {
+                "name": "page",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "per_page",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List shipments"
+        },
+        {
+          "info": {
+            "name": "Retrieve a shipment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/shipments/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a shipment"
+        },
+        {
+          "info": {
+            "name": "Update a shipment",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.flexport.com/v2/shipments/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a shipment"
+        },
+        {
+          "info": {
+            "name": "Create a shareable shipment URL",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/shipments/shareable",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a shareable shipment URL"
+        },
+        {
+          "info": {
+            "name": "List containers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/containers"
+          },
+          "docs": "List containers"
+        },
+        {
+          "info": {
+            "name": "List container legs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/container-legs"
+          },
+          "docs": "List container legs"
+        },
+        {
+          "info": {
+            "name": "List shipment legs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/shipment-legs"
+          },
+          "docs": "List shipment legs"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Bookings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List bookings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/bookings"
+          },
+          "docs": "List bookings"
+        },
+        {
+          "info": {
+            "name": "Create a booking",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/bookings",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a booking"
+        },
+        {
+          "info": {
+            "name": "Retrieve a booking",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/bookings/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a booking"
+        },
+        {
+          "info": {
+            "name": "Create a booking amendment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/booking-amendments",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a booking amendment"
+        },
+        {
+          "info": {
+            "name": "List booking line items",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/booking-line-items"
+          },
+          "docs": "List booking line items"
+        },
+        {
+          "info": {
+            "name": "Create a booking line item",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/booking-line-items",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a booking line item"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "PurchaseOrders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List purchase orders",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/purchase-orders"
+          },
+          "docs": "List purchase orders"
+        },
+        {
+          "info": {
+            "name": "List purchase order line items",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/purchase-order-line-items"
+          },
+          "docs": "List purchase order line items"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Customs",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List commercial invoices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/commercial-invoices"
+          },
+          "docs": "List commercial invoices"
+        },
+        {
+          "info": {
+            "name": "List customs entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/customs-entries"
+          },
+          "docs": "List customs entries"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/documents"
+          },
+          "docs": "List documents"
+        },
+        {
+          "info": {
+            "name": "Upload a document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Upload a document"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Network",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List companies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/companies"
+          },
+          "docs": "List companies"
+        },
+        {
+          "info": {
+            "name": "Create a company",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/companies",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a company"
+        },
+        {
+          "info": {
+            "name": "List contacts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/contacts"
+          },
+          "docs": "List contacts"
+        },
+        {
+          "info": {
+            "name": "Create a contact",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/contacts",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a contact"
+        },
+        {
+          "info": {
+            "name": "List locations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/locations"
+          },
+          "docs": "List locations"
+        },
+        {
+          "info": {
+            "name": "Create a location",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/locations",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a location"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/products"
+          },
+          "docs": "List products"
+        },
+        {
+          "info": {
+            "name": "Create a product",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/products",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a product"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Invoices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List invoices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/invoices"
+          },
+          "docs": "List invoices"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Webhooks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List webhook subscriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.flexport.com/v2/webhooks"
+          },
+          "docs": "List webhook subscriptions"
+        },
+        {
+          "info": {
+            "name": "Create a webhook subscription",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.flexport.com/v2/webhooks",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a webhook subscription"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
