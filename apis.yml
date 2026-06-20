@@ -4,7 +4,7 @@ name: Flexport
 kind: company
 description: >-
   Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Logistics
   - Freight
@@ -19,7 +19,7 @@ apis:
     name: Flexport REST API
     description: >-
       Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://apidocs.flexport.com/
     baseURL: https://api.flexport.com
     tags:
