@@ -32,6 +32,8 @@ apis:
       - type: Developers
         url: https://www.flexport.com/api/
 common:
+  - type: OAuthScopes
+    url: scopes/flexport-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/flexport
   - type: LinkedIn
@@ -46,6 +48,8 @@ common:
     url: rate-limits/flexport-rate-limits.yml
   - type: FinOps
     url: finops/flexport-finops.yml
+  - url: https://www.flexport.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

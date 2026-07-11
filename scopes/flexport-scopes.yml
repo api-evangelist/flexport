@@ -1,0 +1,110 @@
+generated: '2026-07-11'
+method: searched
+source: openapi/flexport-openapi.yml
+docs: https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+note: >-
+  The core Flexport REST API (api.flexport.com) uses OAuth 2.0 client credentials
+  with per-credential access controls and publishes no scopes
+  (https://apidocs.flexport.com/v2/tag/Authentication/); the scopes below are the
+  documented permission scopes for the Flexport Logistics API OAuth authorization
+  code flow (https://docs.logistics-api.flexport.com/2026-02/tag/OAuth/).
+schemes:
+- name: oauth2
+  source: openapi/flexport-openapi.yml
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.flexport.com/oauth/token
+  description: OAuth 2.0 client credentials issued from the Flexport admin console
+scopes:
+- scope: read_logistics_products
+  description: Read the product catalog (SKUs, dimensions, barcodes).
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_products
+  description: Create and update products in the catalog.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_inbounds
+  description: Read inbound shipments and their contents.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_inbounds
+  description: Create, cancel, and modify inbound shipments.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_orders
+  description: Read outbound (D2C) orders and shipments.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_orders
+  description: Create, cancel, and modify outbound (D2C) orders.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_orders_b2b
+  description: Read B2B orders and shipments. (2024-07 and later.)
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_orders_b2b
+  description: Create, cancel, and modify B2B orders. (2024-07 and later.)
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_bundles
+  description: Read bundle (kit) definitions.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_bundles
+  description: Create and update bundle definitions.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_parcels
+  description: Read parcel labels, rates, and master cartons.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_parcels
+  description: Purchase parcel labels and create/link master cartons.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_returns
+  description: Read return shipments and their contents.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_returns
+  description: Create and update return shipments.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_warehouses
+  description: Read the list of warehouses available to the account. (2025-03 and later.)
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_webhooks
+  description: Read webhook subscriptions.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_webhooks
+  description: Create, update, and delete webhook subscriptions.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_events
+  description: Read the event stream that backs webhook deliveries.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_reports
+  description: Read generated reports.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: write_logistics_reports
+  description: Request new reports.
+  sources:
+  - https://docs.logistics-api.flexport.com/2026-02/#section/Common-Resources/Permission-Scopes
+- scope: read_logistics_freight
+  description: Listed as an accepted scope value on the OAuth AuthorizationRedirect
+    call; covers experimental freight endpoints available only in the unstable API
+    version.
+  sources:
+  - https://docs.logistics-api.flexport.com/2023-10/tag/OAuth/
+- scope: write_logistics_freight
+  description: Listed as an accepted scope value on the OAuth AuthorizationRedirect
+    call; covers experimental freight endpoints available only in the unstable API
+    version.
+  sources:
+  - https://docs.logistics-api.flexport.com/2023-10/tag/OAuth/
