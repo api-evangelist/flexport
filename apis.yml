@@ -32,6 +32,12 @@ apis:
       - type: Developers
         url: https://www.flexport.com/api/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/flexport-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/flexport-domain-security.yml
+  - type: Authentication
+    url: authentication/flexport-authentication.yml
   - type: OAuthScopes
     url: scopes/flexport-scopes.yml
   - type: GitHubOrganization
