@@ -32,6 +32,8 @@ apis:
       - type: Developers
         url: https://www.flexport.com/api/
 common:
+  - type: AgenticAccess
+    url: agentic-access/flexport-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/flexport-vulnerability-disclosure.yml
   - type: DomainSecurity
