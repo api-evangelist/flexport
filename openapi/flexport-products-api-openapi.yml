@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: Flexport REST Bookings Products API
+  version: '2023-07-01'
+  description: 'Best-effort OpenAPI 3.1 description of the Flexport REST API v2.
+
+    Derived from the public developer documentation at https://apidocs.flexport.com/.
+
+    Covers a representative subset of the v2 resource model: shipments, bookings,
+
+    purchase orders, customs, documents, network entities, and webhooks. JSON
+
+    request and response bodies use Flexport''s standard envelope (`data`, `meta`,
+
+    `errors`); operation-specific schemas are not modeled here.
+
+    '
+  contact:
+    name: Flexport
+    url: https://www.flexport.com/
+servers:
+- url: https://api.flexport.com
+  description: Production
+security:
+- oauth2: []
+- bearerAuth: []
+tags:
+- name: Products
+paths:
+  /v2/products:
+    get:
+      tags:
+      - Products
+      summary: List products
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+    post:
+      tags:
+      - Products
+      summary: Create a product
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '201':
+          $ref: '#/components/responses/Resource'
+components:
+  responses:
+    Resource:
+      description: Single resource envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+    Collection:
+      description: Collection envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 client credentials issued from the Flexport admin console
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.flexport.com/oauth/token
+          scopes: {}
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

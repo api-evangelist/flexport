@@ -1,0 +1,74 @@
+openapi: 3.1.0
+info:
+  title: Flexport REST Bookings Customs API
+  version: '2023-07-01'
+  description: 'Best-effort OpenAPI 3.1 description of the Flexport REST API v2.
+
+    Derived from the public developer documentation at https://apidocs.flexport.com/.
+
+    Covers a representative subset of the v2 resource model: shipments, bookings,
+
+    purchase orders, customs, documents, network entities, and webhooks. JSON
+
+    request and response bodies use Flexport''s standard envelope (`data`, `meta`,
+
+    `errors`); operation-specific schemas are not modeled here.
+
+    '
+  contact:
+    name: Flexport
+    url: https://www.flexport.com/
+servers:
+- url: https://api.flexport.com
+  description: Production
+security:
+- oauth2: []
+- bearerAuth: []
+tags:
+- name: Customs
+paths:
+  /v2/commercial-invoices:
+    get:
+      tags:
+      - Customs
+      summary: List commercial invoices
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+  /v2/customs-entries:
+    get:
+      tags:
+      - Customs
+      summary: List customs entries
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+components:
+  responses:
+    Collection:
+      description: Collection envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 client credentials issued from the Flexport admin console
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.flexport.com/oauth/token
+          scopes: {}
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

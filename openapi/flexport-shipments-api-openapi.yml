@@ -1,0 +1,165 @@
+openapi: 3.1.0
+info:
+  title: Flexport REST Bookings Shipments API
+  version: '2023-07-01'
+  description: 'Best-effort OpenAPI 3.1 description of the Flexport REST API v2.
+
+    Derived from the public developer documentation at https://apidocs.flexport.com/.
+
+    Covers a representative subset of the v2 resource model: shipments, bookings,
+
+    purchase orders, customs, documents, network entities, and webhooks. JSON
+
+    request and response bodies use Flexport''s standard envelope (`data`, `meta`,
+
+    `errors`); operation-specific schemas are not modeled here.
+
+    '
+  contact:
+    name: Flexport
+    url: https://www.flexport.com/
+servers:
+- url: https://api.flexport.com
+  description: Production
+security:
+- oauth2: []
+- bearerAuth: []
+tags:
+- name: Shipments
+paths:
+  /v2/shipments:
+    get:
+      tags:
+      - Shipments
+      summary: List shipments
+      parameters:
+      - $ref: '#/components/parameters/Page'
+      - $ref: '#/components/parameters/PerPage'
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+  /v2/shipments/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Shipments
+      summary: Retrieve a shipment
+      responses:
+        '200':
+          $ref: '#/components/responses/Resource'
+    patch:
+      tags:
+      - Shipments
+      summary: Update a shipment
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '200':
+          $ref: '#/components/responses/Resource'
+  /v2/shipments/shareable:
+    post:
+      tags:
+      - Shipments
+      summary: Create a shareable shipment URL
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '201':
+          $ref: '#/components/responses/Resource'
+  /v2/containers:
+    get:
+      tags:
+      - Shipments
+      summary: List containers
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+  /v2/container-legs:
+    get:
+      tags:
+      - Shipments
+      summary: List container legs
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+  /v2/shipment-legs:
+    get:
+      tags:
+      - Shipments
+      summary: List shipment legs
+      responses:
+        '200':
+          $ref: '#/components/responses/Collection'
+components:
+  parameters:
+    PerPage:
+      name: per_page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+    Page:
+      name: page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    Resource:
+      description: Single resource envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+    Collection:
+      description: Collection envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 client credentials issued from the Flexport admin console
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.flexport.com/oauth/token
+          scopes: {}
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
