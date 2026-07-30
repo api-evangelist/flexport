@@ -4,7 +4,20 @@ name: Flexport
 kind: company
 description: >-
   Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flexport.png
 tags:
   - Logistics
   - Freight
@@ -15,22 +28,113 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: flexport:flexport-rest-api
-    name: Flexport REST API
-    description: >-
-      Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://apidocs.flexport.com/
-    baseURL: https://api.flexport.com
-    tags:
-      - Logistics
-      - Freight
-      - REST
-    properties:
-      - type: Documentation
-        url: https://apidocs.flexport.com/
-      - type: Developers
-        url: https://www.flexport.com/api/
+- aid: flexport:flexport-rest-api
+  name: Flexport REST API
+  description: >-
+    Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products,
+    network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Logistics
+  - Freight
+  - REST
+  properties:
+  - type: Documentation
+    url: https://apidocs.flexport.com/
+  - type: Developers
+    url: https://www.flexport.com/api/
+- aid: flexport:flexport-bookings-api
+  name: Flexport Bookings API
+  description: The Bookings API from Flexport — 4 operation(s) for bookings.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Bookings
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-bookings-api-openapi.yml
+- aid: flexport:flexport-customs-api
+  name: Flexport Customs API
+  description: The Customs API from Flexport — 2 operation(s) for customs.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Customs
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-customs-api-openapi.yml
+- aid: flexport:flexport-documents-api
+  name: Flexport Documents API
+  description: The Documents API from Flexport — 1 operation(s) for documents.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-documents-api-openapi.yml
+- aid: flexport:flexport-invoices-api
+  name: Flexport Invoices API
+  description: The Invoices API from Flexport — 1 operation(s) for invoices.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Invoices
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-invoices-api-openapi.yml
+- aid: flexport:flexport-network-api
+  name: Flexport Network API
+  description: The Network API from Flexport — 3 operation(s) for network.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Network
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-network-api-openapi.yml
+- aid: flexport:flexport-products-api
+  name: Flexport Products API
+  description: The Products API from Flexport — 1 operation(s) for products.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-products-api-openapi.yml
+- aid: flexport:flexport-purchaseorders-api
+  name: Flexport PurchaseOrders API
+  description: The PurchaseOrders API from Flexport — 2 operation(s) for purchaseorders.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - PurchaseOrders
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-purchaseorders-api-openapi.yml
+- aid: flexport:flexport-shipments-api
+  name: Flexport Shipments API
+  description: The Shipments API from Flexport — 6 operation(s) for shipments.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Shipments
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-shipments-api-openapi.yml
+- aid: flexport:flexport-webhooks-api
+  name: Flexport Webhooks API
+  description: The Webhooks API from Flexport — 1 operation(s) for webhooks.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/flexport-agentic-access.yml
