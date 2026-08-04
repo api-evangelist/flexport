@@ -1,0 +1,30 @@
+{
+  "provider": "flexport",
+  "sources": [
+    "flexport-bookings-api-openapi.yml",
+    "flexport-customs-api-openapi.yml",
+    "flexport-documents-api-openapi.yml",
+    "flexport-invoices-api-openapi.yml",
+    "flexport-network-api-openapi.yml",
+    "flexport-products-api-openapi.yml",
+    "flexport-purchaseorders-api-openapi.yml",
+    "flexport-shipments-api-openapi.yml",
+    "flexport-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "flexport-bookings-api-openapi.yml",
+    "flexport-customs-api-openapi.yml",
+    "flexport-documents-api-openapi.yml",
+    "flexport-invoices-api-openapi.yml",
+    "flexport-network-api-openapi.yml",
+    "flexport-products-api-openapi.yml",
+    "flexport-purchaseorders-api-openapi.yml",
+    "flexport-shipments-api-openapi.yml",
+    "flexport-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
