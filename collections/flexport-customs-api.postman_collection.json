@@ -1,0 +1,199 @@
+{
+  "item": [
+    {
+      "id": "7c483e31-4809-4ae8-ad31-d2737ff41919",
+      "name": "Customs",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5530f724-67a8-4e9d-b522-7a500f7325c4",
+          "name": "List commercial invoices",
+          "request": {
+            "name": "List commercial invoices",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "commercial-invoices"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5740439f-7e36-4537-90f6-2909f7104ebe",
+              "name": "Collection envelope",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "commercial-invoices"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"key_0\": \"string\",\n      \"key_1\": 6790\n    },\n    {\n      \"key_0\": \"string\"\n    }\n  ],\n  \"meta\": {\n    \"key_0\": \"string\",\n    \"key_1\": true,\n    \"key_2\": 4210\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e5eb67ad-5a2b-4670-a51a-3d8f27d93f33",
+          "name": "List customs entries",
+          "request": {
+            "name": "List customs entries",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "customs-entries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b300a3fd-a554-4780-9366-3d3534e1a5db",
+              "name": "Collection envelope",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "customs-entries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"key_0\": 7917.894175197364,\n      \"key_1\": \"string\"\n    },\n    {\n      \"key_0\": false\n    }\n  ],\n  \"meta\": {\n    \"key_0\": 1420.9804206876786,\n    \"key_1\": \"string\",\n    \"key_2\": 8706,\n    \"key_3\": 8294\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.flexport.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "accessTokenUrl",
+        "value": "https://api.flexport.com/oauth/token"
+      },
+      {
+        "key": "grant_type",
+        "value": "client_credentials"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "51cc760b-60a4-462b-a78d-208381a82a32",
+    "name": "Flexport REST Bookings Customs API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Best-effort OpenAPI 3.1 description of the Flexport REST API v2.\nDerived from the public developer documentation at https://apidocs.flexport.com/.\nCovers a representative subset of the v2 resource model: shipments, bookings,\npurchase orders, customs, documents, network entities, and webhooks. JSON\nrequest and response bodies use Flexport's standard envelope (`data`, `meta`,\n`errors`); operation-specific schemas are not modeled here.\n\n\nContact Support:\n Name: Flexport",
+      "type": "text/plain"
+    }
+  }
+}
