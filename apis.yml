@@ -101,6 +101,8 @@ apis:
   humanURL: https://apidocs.flexport.com/
   baseURL: https://api.flexport.com
   tags:
+  - Product
+  tags_raw:
   - Products
   properties:
   - type: OpenAPI
@@ -111,6 +113,8 @@ apis:
   humanURL: https://apidocs.flexport.com/
   baseURL: https://api.flexport.com
   tags:
+  - Purchase Orders
+  tags_raw:
   - PurchaseOrders
   properties:
   - type: OpenAPI
@@ -131,6 +135,8 @@ apis:
   humanURL: https://apidocs.flexport.com/
   baseURL: https://api.flexport.com
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
