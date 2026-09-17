@@ -119,18 +119,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/flexport-products-api-openapi.yml
-- aid: flexport:flexport-purchaseorders-api
-  name: Flexport PurchaseOrders API
-  description: The PurchaseOrders API from Flexport — 2 operation(s) for purchaseorders.
-  humanURL: https://apidocs.flexport.com/
-  baseURL: https://api.flexport.com
-  tags:
-  - Purchase Orders
-  tags_raw:
-  - PurchaseOrders
-  properties:
-  - type: OpenAPI
-    url: openapi/flexport-purchaseorders-api-openapi.yml
 - aid: flexport:flexport-shipments-api
   name: Flexport Shipments API
   description: The Shipments API from Flexport — 6 operation(s) for shipments.
@@ -153,6 +141,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/flexport-webhooks-api-openapi.yml
+- aid: flexport:flexport-purchase-orders-api
+  name: Flexport Purchase Orders API
+  description: The Purchase Orders API from Flexport — 2 operation(s) for purchase orders.
+  humanURL: https://apidocs.flexport.com/
+  baseURL: https://api.flexport.com
+  tags:
+  - Purchase Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/flexport-purchase-orders-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/flexport-agentic-access.yml
