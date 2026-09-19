@@ -63,6 +63,8 @@ apis:
   humanURL: https://apidocs.flexport.com/
   baseURL: https://api.flexport.com
   tags:
+  - Booking
+  tags_raw:
   - Bookings
   properties:
   - type: OpenAPI
@@ -103,6 +105,8 @@ apis:
   humanURL: https://apidocs.flexport.com/
   baseURL: https://api.flexport.com
   tags:
+  - Networks
+  tags_raw:
   - Network
   properties:
   - type: OpenAPI
