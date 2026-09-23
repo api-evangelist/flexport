@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Flexport REST Bookings Network API
+  title: Flexport REST Network API
   version: '2023-07-01'
   description: 'Best-effort OpenAPI 3.1 description of the Flexport REST API v2.
 
@@ -12,9 +12,7 @@ info:
 
     request and response bodies use Flexport''s standard envelope (`data`, `meta`,
 
-    `errors`); operation-specific schemas are not modeled here.
-
-    '
+    `errors`); operation-specific schemas are not modeled here.'
   contact:
     name: Flexport
     url: https://www.flexport.com/
@@ -35,6 +33,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Collection'
+      operationId: getV2Companies
+      x-operation-id-source: derived
     post:
       tags:
       - Network
@@ -44,6 +44,8 @@ paths:
       responses:
         '201':
           $ref: '#/components/responses/Resource'
+      operationId: postV2Companies
+      x-operation-id-source: derived
   /v2/contacts:
     get:
       tags:
@@ -52,6 +54,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Collection'
+      operationId: getV2Contacts
+      x-operation-id-source: derived
     post:
       tags:
       - Network
@@ -61,6 +65,8 @@ paths:
       responses:
         '201':
           $ref: '#/components/responses/Resource'
+      operationId: postV2Contacts
+      x-operation-id-source: derived
   /v2/locations:
     get:
       tags:
@@ -69,6 +75,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Collection'
+      operationId: getV2Locations
+      x-operation-id-source: derived
     post:
       tags:
       - Network
@@ -78,21 +86,10 @@ paths:
       responses:
         '201':
           $ref: '#/components/responses/Resource'
+      operationId: postV2Locations
+      x-operation-id-source: derived
 components:
   responses:
-    Resource:
-      description: Single resource envelope
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              data:
-                type: object
-                additionalProperties: true
-              meta:
-                type: object
-                additionalProperties: true
     Collection:
       description: Collection envelope
       content:
@@ -105,6 +102,19 @@ components:
                 items:
                   type: object
                   additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
+    Resource:
+      description: Single resource envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                additionalProperties: true
               meta:
                 type: object
                 additionalProperties: true

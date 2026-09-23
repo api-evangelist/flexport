@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Flexport REST Bookings PurchaseOrders API
+  title: Flexport REST Purchase Orders API
   version: '2023-07-01'
   description: 'Best-effort OpenAPI 3.1 description of the Flexport REST API v2.
 
@@ -12,9 +12,7 @@ info:
 
     request and response bodies use Flexport''s standard envelope (`data`, `meta`,
 
-    `errors`); operation-specific schemas are not modeled here.
-
-    '
+    `errors`); operation-specific schemas are not modeled here.'
   contact:
     name: Flexport
     url: https://www.flexport.com/
@@ -25,24 +23,28 @@ security:
 - oauth2: []
 - bearerAuth: []
 tags:
-- name: PurchaseOrders
+- name: Purchase Orders
 paths:
   /v2/purchase-orders:
     get:
       tags:
-      - PurchaseOrders
+      - Purchase Orders
       summary: List purchase orders
       responses:
         '200':
           $ref: '#/components/responses/Collection'
+      operationId: getV2PurchaseOrders
+      x-operation-id-source: derived
   /v2/purchase-order-line-items:
     get:
       tags:
-      - PurchaseOrders
+      - Purchase Orders
       summary: List purchase order line items
       responses:
         '200':
           $ref: '#/components/responses/Collection'
+      operationId: getV2PurchaseOrderLineItems
+      x-operation-id-source: derived
 components:
   responses:
     Collection:

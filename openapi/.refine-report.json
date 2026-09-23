@@ -1,15 +1,7 @@
 {
   "provider": "flexport",
   "sources": [
-    "flexport-bookings-api-openapi.yml",
-    "flexport-customs-api-openapi.yml",
-    "flexport-documents-api-openapi.yml",
-    "flexport-invoices-api-openapi.yml",
-    "flexport-network-api-openapi.yml",
-    "flexport-products-api-openapi.yml",
-    "flexport-purchaseorders-api-openapi.yml",
-    "flexport-shipments-api-openapi.yml",
-    "flexport-webhooks-api-openapi.yml"
+    "_original/flexport-openapi.yml"
   ],
   "outputs": [
     "flexport-bookings-api-openapi.yml",
@@ -22,9 +14,26 @@
     "flexport-shipments-api-openapi.yml",
     "flexport-webhooks-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "flexport-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: flexport-purchase-orders-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 10 total)"
+  ],
+  "skipped": [
+    "flexport-bookings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-customs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-invoices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-network-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-products-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-purchase-orders-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-shipments-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "flexport-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

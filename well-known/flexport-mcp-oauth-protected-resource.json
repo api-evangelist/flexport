@@ -1,0 +1,1 @@
+{"resource":"https://mcp.flexport.com/mcp","authorization_servers":["https://mcp.flexport.com"],"scopes_supported":["openid","profile","email","tool:*"],"bearer_methods_supported":["header"],"resource_name":"mcp-auth-gateway authorization proxy"}
