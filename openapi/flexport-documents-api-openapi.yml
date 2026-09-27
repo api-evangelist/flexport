@@ -47,7 +47,28 @@ paths:
       operationId: postV2Documents
       x-operation-id-source: derived
 components:
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
   responses:
+    Resource:
+      description: Single resource envelope
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                additionalProperties: true
+              meta:
+                type: object
+                additionalProperties: true
     Collection:
       description: Collection envelope
       content:
@@ -63,27 +84,6 @@ components:
               meta:
                 type: object
                 additionalProperties: true
-    Resource:
-      description: Single resource envelope
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              data:
-                type: object
-                additionalProperties: true
-              meta:
-                type: object
-                additionalProperties: true
-  requestBodies:
-    JsonBody:
-      required: true
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
   securitySchemes:
     oauth2:
       type: oauth2
