@@ -92,14 +92,13 @@ paths:
       operationId: postV2BookingLineItems
       x-operation-id-source: derived
 components:
-  requestBodies:
-    JsonBody:
+  parameters:
+    Id:
+      name: id
+      in: path
       required: true
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
+      schema:
+        type: string
   responses:
     Resource:
       description: Single resource envelope
@@ -129,13 +128,14 @@ components:
               meta:
                 type: object
                 additionalProperties: true
-  parameters:
-    Id:
-      name: id
-      in: path
+  requestBodies:
+    JsonBody:
       required: true
-      schema:
-        type: string
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
   securitySchemes:
     oauth2:
       type: oauth2
