@@ -30,6 +30,9 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flexport.png
+x-docs-platform: redocly
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
   - Logistics
   - Freight
@@ -156,6 +159,9 @@ apis:
   - type: OpenAPI
     url: openapi/flexport-purchase-orders-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/flexport-capability-edges.yml
+    name: Flexport Business Capability Map
   - type: AgenticAccess
     url: agentic-access/flexport-agentic-access.yml
   - type: VulnerabilityDisclosure
