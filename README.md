@@ -1,4 +1,4 @@
-# Flexport (flexport)
+# Flexport
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,54 +66,148 @@
 
 Flexport is a digital freight forwarder and logistics platform that orchestrates global ocean, air, ground, and customs operations for shippers.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/flexport/refs/heads/main/apis.yml)
+**Areas:** Logistics · Freight · Supply Chain · Customs · B2B
 
-## Tags
+## Flexport on APIs.io
 
-- Logistics
-- Freight
-- Supply Chain
-- Customs
-- B2B
+Everything profiled for Flexport is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/flexport/](https://apis.io/providers/flexport/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (10)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Flexport REST API](https://apis.io/apis/flexport/flexport-rest-api/) — Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks.…
+- [Flexport Bookings API](https://apis.io/apis/flexport/flexport-bookings-api/) — The Bookings API from Flexport — 4 operation(s) for bookings.
+- [Flexport Customs API](https://apis.io/apis/flexport/flexport-customs-api/) — The Customs API from Flexport — 2 operation(s) for customs.
+- [Flexport Documents API](https://apis.io/apis/flexport/flexport-documents-api/) — The Documents API from Flexport — 1 operation(s) for documents.
+- [Flexport Invoices API](https://apis.io/apis/flexport/flexport-invoices-api/) — The Invoices API from Flexport — 1 operation(s) for invoices.
+- [Flexport Network API](https://apis.io/apis/flexport/flexport-network-api/) — The Network API from Flexport — 3 operation(s) for network.
+- [Flexport Products API](https://apis.io/apis/flexport/flexport-products-api/) — The Products API from Flexport — 1 operation(s) for products.
+- [Flexport Shipments API](https://apis.io/apis/flexport/flexport-shipments-api/) — The Shipments API from Flexport — 6 operation(s) for shipments.
+- [Flexport Webhooks API](https://apis.io/apis/flexport/flexport-webhooks-api/) — The Webhooks API from Flexport — 1 operation(s) for webhooks.
+- [Flexport Purchase Orders API](https://apis.io/apis/flexport/flexport-purchase-orders-api/) — The Purchase Orders API from Flexport — 2 operation(s) for purchase orders.
 
-## APIs
+### Published properties
 
-### Flexport REST API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Flexport REST API exposes shipment status, purchase orders, bookings, customs entries, invoices, products, network entities, ports, documents, and webhooks. Uses JSON request/response with v2 endpoints.
+#### MCP servers (1)
 
-- **Human URL:** [https://apidocs.flexport.com/](https://apidocs.flexport.com/)
-- **Base URL:** `https://api.flexport.com`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [flexport](https://apis.io/servers/flexport/flexport/)
 
-- Logistics
-- Freight
-- REST
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Documentation](https://apidocs.flexport.com/)
-- [Developers](https://www.flexport.com/api/)
-- [Postman Collection](collections/flexport.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/flexport.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Flexport Agentic Access](https://apis.io/agentic-access/flexport/flexport-agentic-access/)
 
-## Common Properties
+#### Collections (10)
 
-- [GitHub Organization](https://github.com/flexport)
-- [LinkedIn](https://www.linkedin.com/company/flexport)
+Postman and Open Collection request collections.
+
+- [Flexport REST API](https://apis.io/collections/flexport/open-flexport/)
+- [Flexport REST Bookings API](https://apis.io/collections/flexport/open-flexport-bookings-api/)
+- [Flexport REST Bookings Customs API](https://apis.io/collections/flexport/open-flexport-customs-api/)
+- [Flexport REST Bookings Documents API](https://apis.io/collections/flexport/open-flexport-documents-api/)
+- [Flexport REST Bookings Invoices API](https://apis.io/collections/flexport/open-flexport-invoices-api/)
+- [Flexport REST Bookings Network API](https://apis.io/collections/flexport/open-flexport-network-api/)
+- [Flexport REST Bookings Products API](https://apis.io/collections/flexport/open-flexport-products-api/)
+- [Flexport REST Bookings PurchaseOrders API](https://apis.io/collections/flexport/open-flexport-purchaseorders-api/)
+- [Flexport REST Bookings Shipments API](https://apis.io/collections/flexport/open-flexport-shipments-api/)
+- [Flexport REST Bookings Webhooks API](https://apis.io/collections/flexport/open-flexport-webhooks-api/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Flexport Authentication](https://apis.io/security/flexport/flexport-authentication/)
+- [Flexport Domain Security](https://apis.io/security/flexport/flexport-domain-security/)
+- [Flexport Vulnerability Disclosure](https://apis.io/security/flexport/flexport-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Flexport Scopes](https://apis.io/scopes/flexport/flexport-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Flexport Plans Pricing](https://apis.io/plans/flexport/flexport-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Flexport Rate Limits](https://apis.io/rate-limits/flexport/flexport-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Flexport Finops](https://apis.io/finops/flexport/flexport-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.flexport.com/)
 - [Documentation](https://apidocs.flexport.com/)
-- [Plans](plans/flexport-plans-pricing.yml)
-- [Rate Limits](rate-limits/flexport-rate-limits.yml)
-- [Fin Ops](finops/flexport-finops.yml)
+- [Blog](https://www.flexport.com/blog)
+- [GitHub](https://github.com/flexport)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 15.4** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 60.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 5.3 |
+
+**Agent readiness 42.4** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/flexport/](https://apis.io/providers/flexport/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Flexport: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/flexport/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
